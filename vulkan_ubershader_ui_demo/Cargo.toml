@@ -1,0 +1,19 @@
+[package]
+name = "vulkan_ubershader_ui_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winit = { version = "0.29", features = ["rwh_05"] }
+ash = { version = "0.37", features = ["linked"] }
+raw-window-handle = "0.5"
+ash-window = "0.12"
+shaderc = "0.8"
+rusttype = "0.9"
+image = "0.24"
+nalgebra-glm = "0.18"
+memoffset = "0.9" # For vertex struct offset_of!
+half = "=2.4.0"
+
+[build-dependencies]
+shaderc = "0.8"
